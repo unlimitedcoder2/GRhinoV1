@@ -33,9 +33,9 @@ namespace GRhinoV1
         {
         }
 
-            private void InitializeComponent()
-            {
-                global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(App));
-            }
+        private void InitializeComponent()
+        {
+            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(App));
+        }
     }
 }
