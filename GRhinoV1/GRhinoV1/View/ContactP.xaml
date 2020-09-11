@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="GRhinoV1.View.ContactP"
+			 Title="Golden Rhino - Contact Us"
+			 BackgroundColor="#2a3750">
+    <ContentPage.Content>
+		<StackLayout Padding="5">
+			<Label TextColor="White" FontSize="Title" HorizontalTextAlignment="Center">Contact Us!
+			</Label>
+			<Image Source="https://cdn2.iconfinder.com/data/icons/font-awesome/1792/envelope-512.png" 
+					HeightRequest="80" HorizontalOptions="Center"/>
+
+			<Label Text="Email" FontAttributes="Bold" FontSize="14" TextColor="White">
+			</Label>
+			<Entry x:Name="tbEmail" Placeholder="Enter first name" FontSize="12" TextColor="White" PlaceholderColor="LightGray"></Entry>
+			<Label Text="Message" FontAttributes="Bold" FontSize="14" TextColor="White"></Label>
+			<Editor x:Name="tbMessage" Placeholder="Enter your message" HeightRequest="100" FontSize="12" TextColor="White" PlaceholderColor="LightGray"/>
+			<Label x:Name="ErrorMessage" FontAttributes="Bold" FontSize="14" TextColor="Red"></Label>
+			<Button x:Name="btnSubmit" Clicked="btnSubmit_Clicked"  Text="Submit" BackgroundColor="#7ea16b" TextColor="White" Margin="30, 5, 30, 0"></Button>
+		</StackLayout>
+    </ContentPage.Content>
+</ContentPage>

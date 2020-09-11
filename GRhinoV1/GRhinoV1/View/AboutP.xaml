@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="GRhinoV1.View.AboutP"
+			 Title="Golden Rhino - About"
+			 BackgroundColor="#2a3750">
+    <ContentPage.Content>
+        <StackLayout>
+			<Image Source="https://www.rdrnews.com/wp-content/uploads/2017/03/generic-business-e1500050949942.jpg" 
+					HeightRequest="240" HorizontalOptions="Center"/>
+			<Label Margin="10, 0, 0, 0" TextColor="White" FontSize="14">Golden Rhino is a game studio based in the heart of liverpool's largest technology hub, The Baltic Triangle. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non sapien et lacus rhoncus tincidunt. Vestibulum interdum tortor sed tristique ornare. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris vitae velit eu dui porta rhoncus. Sed nec rhoncus est, in mollis erat. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam tempus eros eu sem condimentum, nec sodales risus vestibulum. Vivamus non eros sem. Phasellus massa ex, imperdiet nec nulla ut, tempus porttitor odio. Curabitur quis nibh nisi. Suspendisse eu dolor et nisl mattis ultrices nec ac velit. Quisque vel sapien varius, consectetur risus nec, euismod sem. 
+			
+Vivamus vitae risus et enim ultricies iaculis. Nulla blandit neque ornare lectus pellentesque aliquam. Phasellus tortor dolor, euismod sit amet tincidunt nec, convallis quis nibh. Etiam arcu sem, commodo ultricies convallis ac, lobortis lobortis tortor. Nam auctor molestie commodo. Curabitur mauris orci, semper non tempor sit amet, viverra id erat. Ut vehicula ligula enim, vitae finibus mauris pretium eu. Maecenas sollicitudin dui id metus ornare, a blandit mauris viverra. Morbi malesuada accumsan justo eu ornare. Donec dolor massa, tempus ac vestibulum nec, eleifend vitae ante. Suspendisse eu metus ultrices, ornare magna vel, varius augue. Nunc consectetur ligula sit amet odio sodales, sit amet scelerisque lectus condimentum.
+			</Label>
+		</StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+			 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+			 xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+			 xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+			 mc:Ignorable="d"
+			 x:Class="GRhinoV1.ViewModel.Registration"
+			 BackgroundColor="#2a3750"
+			 >
+	<ContentPage.Content>
+		<ScrollView>
+			<StackLayout Padding="5" VerticalOptions="StartAndExpand" >
+				<StackLayout Spacing="1" Padding="5" VerticalOptions="Center">
+					<!--#region Controls-->
+					<!--First name-->
+					<Label TextColor="White" FontSize="Title" HorizontalTextAlignment="Center">Register</Label>
+					<!--TODO: Change to local--><Image Source="https://www.kindpng.com/picc/b/10-104902_adult-icon-png.png" 
+					HeightRequest="80" />
+					<Label Text="First Name" FontAttributes="Bold" FontSize="14" TextColor="White"></Label>
+					<Entry x:Name="tbFirstname" Placeholder="Enter first name" FontSize="12" TextColor="White" PlaceholderColor="LightGray"></Entry>
+					<!--Last name-->
+					<Label Text="Surname" FontAttributes="Bold" FontSize="14" TextColor="White"></Label>
+					<Entry x:Name="tbSurname" Placeholder="Enter Surname" FontSize="12" TextColor="White" PlaceholderColor="LightGray"></Entry>
+					<!--Email-->
+					<Label Text="Email" FontAttributes="Bold" FontSize="14" TextColor="White"></Label>
+				<Entry x:Name="tbEmail" Placeholder="Enter Email" FontSize="12" TextColor="White" PlaceholderColor="LightGray">
+				</Entry>
+					<!--Password-->
+					<Label Text="Password" FontAttributes="Bold" FontSize="14" TextColor="White"></Label>
+				<Entry x:Name="tbPassword" Placeholder="Enter Password" FontSize="12" IsPassword="True" TextColor="White" PlaceholderColor="LightGray">
+				</Entry>
+					<!--C password-->
+					<Label Text="Confirm Password" FontAttributes="Bold" FontSize="14" TextColor="White"></Label>
+				<Entry x:Name="tbConfirmPassword" Placeholder="Confirm Password" FontSize="12" IsPassword="True" TextColor="White" PlaceholderColor="LightGray">
+				</Entry>
+				<Label Text="Account Type" FontAttributes="Bold" FontSize="14" TextColor="White"></Label>
+					<Picker x:Name="pckrAccount" Title="Pick account type" FontSize="12" TextColor="White"></Picker>
+					<Label x:Name="ErrorMessage" FontAttributes="Bold" FontSize="14" TextColor="Red"></Label>
+					<Button x:Name="btnRegister" Clicked="btnRegister_Clicked" Text="Register" BackgroundColor="#7ea16b" TextColor="White" Margin="30, 10, 30, 0"></Button>
+					<Button x:Name="btnLogin" Clicked="btnLogin_Clicked" Text="Login to an existing account" TextColor="Black" BackgroundColor="White" Margin="30, 10, 30, 0"/>
+					<!--Button for new users-->
+					<!--#endregion-->
+				</StackLayout>
+			</StackLayout>
+		</ScrollView>
+	</ContentPage.Content>
+</ContentPage>

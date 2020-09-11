@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="GRhinoV1.View.HomeP" BackgroundColor="#2a3750" x:Name="Page"
+			 Title="Golden Rhino">
+	<ContentPage.Content >
+		<StackLayout>
+			<!--<Label HeightRequest="50" BackgroundColor="#14213D" TextColor="#FFFB39" FontSize="32" HorizontalTextAlignment="Center" FontFamily="Arial">Golden Rhino</Label>-->
+			<!--Make grid as tall as it is wide-->
+			<Grid x:Name="grid" HeightRequest="{Binding Source={x:Reference grid}, Path=Width}"  Margin="10"> 
+				<Grid.RowDefinitions>
+					<RowDefinition Height="*"></RowDefinition>
+					<RowDefinition Height="*"></RowDefinition>
+				</Grid.RowDefinitions>
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition Width="*"></ColumnDefinition>
+					<ColumnDefinition Width="*"></ColumnDefinition>
+				</Grid.ColumnDefinitions>
+				<Frame x:Name="Games" Grid.Row="0" Grid.Column="0" BackgroundColor="#EC808D" CornerRadius="10">
+					<Frame.GestureRecognizers>
+						<TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"></TapGestureRecognizer>
+					</Frame.GestureRecognizers>
+					<StackLayout>
+						<Label TextColor="White">Check out our games!</Label>
+					</StackLayout>
+				</Frame>
+				<Frame x:Name="About" Grid.Row="0" Grid.Column="1" BackgroundColor="#95F204" CornerRadius="10">
+					<Frame.GestureRecognizers>
+						<TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"></TapGestureRecognizer>
+					</Frame.GestureRecognizers>
+					<StackLayout>
+						<Label TextColor="White">Find out more about us!</Label>
+					</StackLayout>
+				</Frame>
+
+				<Frame Grid.Row="1" Grid.Column="0" BackgroundColor="#00BFBF" CornerRadius="10">
+					<StackLayout>
+						<Label TextColor="White" HorizontalTextAlignment="Center">Level 1</Label>
+					</StackLayout>
+				</Frame>
+				<Frame x:Name="Contact" Grid.Row="1" Grid.Column="1" BackgroundColor="#8400FF" CornerRadius="10">
+					<Frame.GestureRecognizers>
+						<TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"></TapGestureRecognizer>
+					</Frame.GestureRecognizers>
+					<StackLayout>
+						<Label TextColor="White">Any questions? Contact us!</Label>
+					</StackLayout>
+				</Frame>
+			</Grid>
+		</StackLayout>
+    </ContentPage.Content>
+</ContentPage>

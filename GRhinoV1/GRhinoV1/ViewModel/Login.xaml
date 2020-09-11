@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+			 BackgroundColor="#2a3750"
+             x:Class="GRhinoV1.ViewModel.Login">
+    <ContentPage.Content>
+		<ScrollView>
+			<StackLayout Padding="5" VerticalOptions="StartAndExpand" >
+				<StackLayout Spacing="1" Padding="5" VerticalOptions="Center">
+					<!--#region Controls-->
+					<!--First name-->
+					<Label TextColor="White" FontSize="Title" HorizontalTextAlignment="Center">Login</Label>
+					<!--TODO: Change to local-->
+					<Image Source="https://www.kindpng.com/picc/b/10-104902_adult-icon-png.png" 
+					HeightRequest="80" />
+					<!--Email-->
+					<Label Text="Email" FontAttributes="Bold" FontSize="14" TextColor="White"></Label>
+					<Entry x:Name="tbEmail" Placeholder="Enter Email" FontSize="12" TextColor="White" PlaceholderColor="LightGray">
+					</Entry>
+					<!--Password-->
+					<Label Text="Password" FontAttributes="Bold" FontSize="14" TextColor="White"></Label>
+					<Entry x:Name="tbPassword" Placeholder="Enter Password" FontSize="12" IsPassword="True" TextColor="White" PlaceholderColor="LightGray">
+					</Entry>
+					<Label x:Name="ErrorMessage" FontAttributes="Bold" FontSize="14" TextColor="Red"></Label>
+					<Button x:Name="btnLogin"  Clicked="btnLogin_Clicked" Text="Login" BackgroundColor="#7ea16b" TextColor="White" Margin="30, 10, 30, 0"></Button>
+					<Button x:Name="btnRegister" Clicked="btnRegister_Clicked"  Text="Register" TextColor="Black" BackgroundColor="White" Margin="30, 10, 30, 0"/>
+					<!--Button for new users-->
+					<!--#endregion-->
+				</StackLayout>
+			</StackLayout>
+		</ScrollView>
+	</ContentPage.Content>
+</ContentPage>
